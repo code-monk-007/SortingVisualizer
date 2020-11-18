@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sorting visualizer</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="row">
+            <div  class="col-md-3" id="me">
+                <nav id="nv" class="navbar navbar-expand-lg navbar-light bg-dark">  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div id="menu">
+                        <h4>
+                            The array size is
+                            <span id="qwe">50</span>
+                        </h4>
+                        <div id="generateArray" class="slidecontainer">
+                            <input type="range"  value="50" class="slider" min="1" max="80" >
+                            <h5 id="Assize">Set Array Size</h5>
+                            <button id="op" class="btn btn-default" onclick="generateRandomArray()">generate random array</button>
+                        </div>
+                        <div id="chooseSort">
+                            <select >
+                                    <option value="bubble">bubble sort</option>
+                                    <option value="merge">merge sort</option>
+                                    <option value="quick">quick sort</option>
+                                
+                            </select>
+                            <button  class="btn btn-default" onclick="sortArray()">sort</button>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+            </div>
+            <div id="container" class="col-md-9">
+        
+            </div>
+    </div>
+
+   
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script src="helperFunc.js"></script>
+    <script src="sort/bubbleSort.js"></script>
+    <script src="sort/mergeSort.js"></script>
+    
+    <script src="sort/quickSort.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
